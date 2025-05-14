@@ -1,0 +1,13 @@
+populacao = int(input("Quanto é a população?"))
+validos = int(input("Quantos votos válidos?"))
+brancos = int(input("Quantos votos brancos?"))
+nulos = int(input("Quantos votos nulos?"))
+invalidos = populacao - validos - brancos - nulos
+nulosx = int((nulos/populacao)*100)
+validosx = int((validos/populacao)*100)
+brancosx = int((brancos/populacao)*100)
+invalidosx = int((invalidos/populacao)*100)
+print("A porcentagem de nulos é:",nulosx)
+print("A porcentagem de válidos é:",validosx)
+print("A porcentagem de brancos é:",brancosx)
+print("A porcentagem de invalidos é:",invalidosx)
